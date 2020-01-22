@@ -22,6 +22,7 @@ public class Bounce : MonoBehaviour
     {
         if (other.gameObject == the_other_object)
         {
+            Debug.Log("Testing");
             other.GetComponent<Rigidbody>().AddForce(0, 700.0f * Time.deltaTime, 0);
         }
     }
