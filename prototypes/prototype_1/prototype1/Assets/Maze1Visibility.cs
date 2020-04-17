@@ -9,6 +9,7 @@ public class Maze1Visibility : MonoBehaviour
     public GameObject Maze2;
     public bool maze1Active = true;
     public bool maze2Active = false;
+    public bool nightmode = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class Maze1Visibility : MonoBehaviour
 
         maze1Active = true;
         maze2Active = false;
+        nightmode = false;
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class Maze1Visibility : MonoBehaviour
 
                 maze1Active = false;
                 maze2Active = true;
+                nightmode = true;
             }
             else if (maze1Active == false && maze2Active == true)
             {
@@ -67,6 +70,7 @@ public class Maze1Visibility : MonoBehaviour
 
                 maze1Active = true;
                 maze2Active = false;
+                nightmode = false;
             }
         }
     }
